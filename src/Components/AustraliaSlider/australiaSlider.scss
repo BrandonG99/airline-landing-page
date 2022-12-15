@@ -1,12 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 :root {
   --color-type: #3d3d3d;
   --color-cobalt: #005ba9;
@@ -140,66 +131,78 @@
   --hover-transition: transform 250ms ease, box-shadow 250ms ease;
 }
 
-a {
-  text-decoration: none;
+.australiaSlider {
+  width: 65%;
+  margin-top: 50px; // 3.125rem;
+  margin-left: 165px;
 }
 
-li {
-  list-style: none;
+.australiaSliderTitle h1 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: var(--color-black);
 }
 
-.section {
-  padding: 4rem 0 2rem;
+.slick-slide > div {
+  width: 350px;
+  margin: 0 10px;
 }
 
-.container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.slick-list {
+  width: 1142px;
+  margin: 0 -10px;
+  overflow: scroll;
+  .slick-track {
+    overflow: hidden;
+  }
 }
 
-.icon {
-  font-size: 2rem;
+.slick-next,
+.slick-prev {
+  visibility: hidden;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow-x: hidden;
+  color: #fff;
   cursor: pointer;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
+.card-top h1 {
+  font-size: 0.9rem;
+  margin: 20px;
 }
 
-.grid {
-  display: grid;
-  align-items: center;
+.card-top-img {
+  background-position: center;
+  overflow: hidden;
 }
 
-.btn {
-  padding: 0.6rem 1.5rem;
-  background: var(--color-blue-500);
-  border-radius: 3rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.btn a {
-  color: var(--color-grey-100);
-  font-weight: 500;
-}
-
-.btn:hover {
-  color: var(--color-grey-100);
-}
-
-/* img,
-video {
+.card-top-img img {
+  transition: transform 0.3s ease;
   width: 100%;
-  height: auto;
-} */
-
-input {
-  font-size: 100%;
+  object-fit: cover;
 }
 
-body {
-  background: var(--color-grey-100);
+.card-top-img:hover img {
+  transform: scale(1.08);
+  filter: brightness(107%);
+}
+
+.card-bottom {
+  margin: 10px 20px;
+}
+
+.card-bottom h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.card-bottom span {
+  font-weight: 300;
+  color: var(--color-grey-500);
 }
